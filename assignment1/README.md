@@ -1,5 +1,4 @@
-Notes for Getting and Cleaning Data assignment
-===========
+# Notes for Getting and Cleaning Data assignment
 
 R version 3.1.1 (2014-07-10) -- "Sock it to Me"
 Copyright (C) 2014 The R Foundation for Statistical Computing
@@ -11,7 +10,7 @@ Additional OS software required:  curl
 Additional R packages required: data.table, reshape2
 
 The code uses:
-'''
+```
 tempfile        package:base
 tempdir         package:base
 paste           package:base
@@ -26,7 +25,7 @@ write.table     package:utils
 merge           package:data.table
 melt            package:reshape2
 dcast           package:reshape2
-'''
+```
 
 The code assumes the structure of the data zip file is known.  The file run_analysis.R is well commented, but to summarise it's operaion:
 
@@ -54,8 +53,8 @@ We are interested in generating a table of only the means and standard deviation
 The produced table gives the subject, activityID, activity and the average value for each of the variables in the heading.
 
 To run this code, simply:
-'''
+```
 source("run_analysis.R")
-'''
+```
 The code will download and extract the zip, merge and subset the data and write out the file "castMeanStdDat.txt"
  
